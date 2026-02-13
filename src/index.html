@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+<script>
+(function(){
+  try{
+    var t = localStorage.getItem('jsalako_theme') || 'light';
+    document.documentElement.setAttribute('data-theme', t);
+    document.documentElement.style.backgroundColor = (t === 'dark') ? '#0b0f1a' : '#f7f8fb';
+    if(document.body){document.body.style.backgroundColor=document.documentElement.style.backgroundColor;}
+  }catch(e){}
+})();
+</script>
+<style>
+html.preload *, html.preload *:before, html.preload *:after { transition: none !important; }
+</style>
+<script>document.documentElement.classList.add('preload');</script>
+
+<meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>John Salako • Career</title>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <script defer src="assets/data.js"></script>
+  <script defer src="assets/script.js"></script>
+
+<meta name="color-scheme" content="light dark">
+</head>
+
+<body data-page="home" style="background: var(--bg);">
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <div class="brand-badge"></div>
+        <div>
+          <div class="brand-title" id="name">John Salako</div>
+          <small id="headline">Dual Ph.D. Candidate • Data Scientist • ML Engineer • Geospatial AI</small>
+        </div>
+      </a>
+
+      <div class="actions">
+        <button class="btn hamburger" id="menuBtn" aria-label="Menu">Menu</button>
+        <button class="btn" id="themeBtn">Mode🌖</button>
+        <a class="btn primary" href="#contact">Contact</a>
+      </div>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a class="chip" data-nav="home" href="index.html">Home</a>
+        <a class="chip" data-nav="work" href="work.html">Work</a>
+        <a class="chip" data-nav="education" href="education.html">Education</a>
+        <a class="chip" data-nav="current" href="current-projects.html">Current Projects</a>
+        <a class="chip" data-nav="projects" href="past-projects.html">Past Projects</a>
+        <a class="chip" data-nav="publications" href="publications.html">Publications</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="kicker">Now: <b>Geospatial ML & AI</b> • Next: <b>Data Science / ML Engineering</b></div>
+          <h1>Turning Earth data into decisions—at scale.</h1>
+          <p class="lede">I’m John Salako, a dual Ph.D. candidate working at the intersection of
+            remote sensing, machine learning, and high‑throughput geospatial analytics.
+            My path has progressed from marine geoscience (B.Sc. in Marine Science & Technology),
+            to geology & environmental systems (M.Sc. in Geological Sciences), and now into
+            Data Science and ML Engineering (dual Ph.D. in CMSE + EES).</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="current-projects.html">Explore Projects</a>
+            <a class="btn" href="publications.html">Publications</a>
+            <a class="btn" href="web-applications.html">Web Apps</a>
+          </div>
+
+          <div class="hero-meta">
+            <span class="pill">📍 <span id="location">Arlington, VA (open to US-wide roles)</span></span>
+            <span class="pill">🧠 Focus: Data-Driven ML • Geospatial AI • Forecasting • MLOps</span>
+          </div>
+
+          <div class="section">
+            <h2>Quick links</h2>
+            <div id="quickLinks" class="linkrow"></div>
+          </div>
+
+          <div class="section">
+            <h2>Core skills</h2>
+            <div id="skills" class="tags"></div>
+          </div>
+
+          <div class="section notice" style="margin-top:18px">
+            <b>Welcome</b><br/>Welcome to my Professional Website where you get to learn all about me in one place. Checkout the exciting projects I'm currently working on, checkout some of my completed projects, and read my publications and reports.
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <div>
+            <div class="portrait">
+              <img src="assets/john.jpg" alt="Professional headshot of John Salako"/>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid">
+        <div class="card col-4">
+          <h3>What I build</h3>
+          <p>End‑to‑end geospatial ML systems: data → features → models → evaluation → deployment.</p>
+          <div class="meta"><span>Remote Sensing</span><span>ML</span><span>MLOps</span></div>
+        </div>
+        <div class="card col-4">
+          <h3>What I study</h3>
+          <p>Data-Driven Science and Engineering, Spatiotemporal yield prediction, yield stability mapping, buffer‑zone analytics, and scalable satellite pipelines.</p>
+          <div class="meta"><span>Midwest Agriculture</span><span>AI</span><span>Statistics</span></div>
+        </div>
+        <div class="card col-4">
+          <h3>What I’m seeking</h3>
+          <p>Data Science / ML Engineering / AI Research roles where I can ship reliable models, own pipelines, and drive measurable impact.</p>
+          <div class="meta"><span>ML Engineer</span><span>Data Scientist</span><span>Geospatial</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <div class="grid">
+        <div class="card col-12">
+          <h3>Let’s talk</h3>
+          <p>
+            Email: <a class="inline" href="mailto:johnsalako3@gmail.com">johnsalako3@gmail.com</a><br/>
+            LinkedIn: <a class="inline" href="https://www.linkedin.com/in/john-salako/">linkedin.com/in/john-salako</a><br/>
+            GitHub: <a class="inline" href="https://github.com/TheGospeler">github.com/TheGospeler</a>
+          </p>
+          
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-copy">© 2026 <span id="footerName">John Salako</span>.</div>
+      
+    </footer>
+  </main>
+<script>window.addEventListener('load', ()=>document.documentElement.classList.remove('preload'));</script>
+</body>
+</html>

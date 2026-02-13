@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+studio/node_modules/
+
+# Build output
+_site/
+studio/dist/
+
+# Environment variables
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sanity
+studio/.sanity/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Misc
+.cache/
+.claude/

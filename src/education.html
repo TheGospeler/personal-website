@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+<script>
+(function(){
+  try{
+    var t = localStorage.getItem('jsalako_theme') || 'light';
+    document.documentElement.setAttribute('data-theme', t);
+    document.documentElement.style.backgroundColor = (t === 'dark') ? '#0b0f1a' : '#f7f8fb';
+    if(document.body){document.body.style.backgroundColor=document.documentElement.style.backgroundColor;}
+  }catch(e){}
+})();
+</script>
+<style>
+html.preload *, html.preload *:before, html.preload *:after { transition: none !important; }
+</style>
+<script>document.documentElement.classList.add('preload');</script>
+
+<meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>John Salako • Career</title>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <script defer src="assets/data.js"></script>
+  <script defer src="assets/script.js"></script>
+
+<meta name="color-scheme" content="light dark">
+</head>
+
+<body data-page="education" style="background: var(--bg);">
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <div class="brand-badge"></div>
+        <div>
+          <div class="brand-title">John Salako</div>
+          <small id="headline">Dual Ph.D. Candidate • Data Scientist • ML Engineer • Geospatial AI</small>
+        </div>
+      </a>
+
+      <div class="actions">
+        <button class="btn hamburger" id="menuBtn" aria-label="Menu">Menu</button>
+        <button class="btn" id="themeBtn">Mode🌖</button>
+        <a class="btn primary" href="index.html#contact">Contact</a>
+      </div>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a class="chip" data-nav="home" href="index.html">Home</a>
+        <a class="chip" data-nav="work" href="work.html">Work</a>
+        <a class="chip" data-nav="education" href="education.html">Education</a>
+        <a class="chip" data-nav="current" href="current-projects.html">Current Projects</a>
+        <a class="chip" data-nav="projects" href="past-projects.html">Past Projects</a>
+        <a class="chip" data-nav="publications" href="publications.html">Publications</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="section">
+      <div class="grid">
+        <div class="card col-12">
+          <h2 style="margin:0 0 6px">EDUCATION</h2>
+          <p style="margin:0;color:var(--muted)">Academic training spanning marine science → geology → computational + environmental Ph.D. research.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid" id="cards"></div>
+    </section>
+
+    <section class="section">
+      <div class="grid">
+        <div class="card col-12 award-callout">
+          <h2 style="margin:0 0 6px">AWARDS</h2>
+          <p style="margin:0;color:var(--muted)">Selected recognitions and fellowships.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid" id="awardsCards"></div>
+    </section>
+
+  </main>
+<footer class="container footer">
+    <div class="footer-copy">© 2026 <span id="footerName">John Salako</span>.</div>
+    <div>
+  </footer>
+<script>window.addEventListener('load', ()=>document.documentElement.classList.remove('preload'));</script>
+</body>
+</html>
